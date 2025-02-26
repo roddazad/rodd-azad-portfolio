@@ -50,6 +50,9 @@
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
     border-radius: 8px;
 }
+.collapse {
+  transition: height 0.3s ease-in-out;
+}
 
 /* skill section */
 .skill-card {
@@ -59,6 +62,10 @@
     transform: scale(1.1); 
     box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7); /* Soft cyan glow */
   }
+  .btn {
+    min-width: 120px; 
+    text-align: center;
+}
 
 /* resume section */
 .resume-preview iframe {
@@ -67,15 +74,99 @@
     border-radius: 8px;
   }
   /* footer section */
-footer {
+  footer {
+    background: #0a0a0a;
+    padding: 20px 0;
     font-size: 14px;
-  }
-  footer a {
+    text-align: center;
+    border-top: 3px solid #00ffff;
+}
+.footer-link {
+    color: #bbb;
     text-decoration: none;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  footer a:hover {
+    transition: color 0.3s ease-in-out;
+}
+.footer-link:hover {
     color: #00ffff;
-    transform: scale(1.1);
-  } 
+}
+.footer-social {
+    margin: 0 10px;
+    color: #bbb;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.footer-social:hover {
+    color: #00ffff;
+    transform: scale(1.2);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* about.html */
+  /* timeline section */
+  .timeline {
+    background: #121212; /* Dark background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+}
+.timeline-item {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 3px solid #00ffff; /* Cyan accent */
+    background: rgba(0, 255, 255, 0.1); /* Subtle dark transparency */
+    border-radius: 8px;
+}
+.timeline h4 {
+    color: #ddd; 
+}
+.timeline p {
+    color: #ddd; 
+}
+.timeline-item:hover {
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.timeline-title {
+  text-align: center;
+  color: #00ffff; /* Cyan accent */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  
+}
+
+.fun-facts {
+  background: linear-gradient(to right, #121212, #1a1a1a);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.4);
+}
+.fun-facts i {
+  margin-right: 10px;
+}
+.btn-outline-info:hover {
+  background: #00ffff;
+  color: #000;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+#backToHome {
+  margin-bottom: 40px; 
+}
+
+
+
+@media (max-width: 768px) { 
+  .footer-sections { 
+      display: none; 
+  }
+  .footer-message {
+      text-align: center;
+      padding: 10px 0;
+  }
+}

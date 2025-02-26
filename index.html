@@ -31,10 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about-me">About Me</a>
+                        <a class="nav-link" href="about.html">About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#projects">Projects</a>
+                      <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#skills">Skills</a>
@@ -63,157 +63,122 @@
         </div>
      </header>
 
-    <!-- About Section -->
-     <section id="about-me" class="py-5 bg-dark text-light">
+      <!-- About Me Section -->
+      <section id="about-me" class="py-5 bg-dark text-light">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-                <h2 class="display-5 fw-bold text-center">About Me</h2>
-                <p class="lead">
-                    I'm Rodd Azad, a results-driven
-                    <strong>Full-stack Developer & Innovator</strong> with a passion for transforming complex challenges into scalable, intelligent web solutions. With a robust background in software engineering, web development, and operations management, I bring over five years of hands-on experience in leveraging modern web technologies and AI integration to enhance user experience and drive business efficiency.
-                </p>
-                <p class="lead">
-                    My professional journey began in operations management, where I honed my leadership skills by directing teams and optimizing workflows. This early experience instilled in me a deep appreciation for process excellence and strategic thinking—qualities that have been instrumental in my transition to the tech world. Recognizing the immense potential of digital innovation, I co-founded Coded Pro, a web development company dedicated to delivering scalable, future-proof digital solutions. At Coded Pro, I collaborate with a talented team of developers and creative minds, pushing the boundaries of what’s possible by combining technical expertise with a visionary approach.
-                  </p>
-                  <p class="lead">I specialize in architecting high-performance web applications that not only address current market demands but also anticipate future trends. Whether it's developing dynamic single-page applications or integrating advanced AI features, my goal is to create impactful solutions that seamlessly merge functionality with user-centric design. Beyond project development, I am an advocate for continuous learning and open-source collaboration, regularly engaging with the tech community through conferences, workshops, and meetups.</p>
-                  <p class="lead">On the personal front, family is at the heart of everything I do. I am a devoted husband and proud father to a lively nine-year-old son. My wife, son, and I make it a point to spend quality time together—whether it's our weekly trips to the library, engaging in board games like chess and backgammon, or even sharing bouts of jiu-jitsu wrestling. This balance of professional ambition and personal joy fuels my drive to create solutions that not only innovate but also enrich the lives of those around me.</p>
-                  <p class="lead">Every project I undertake is driven by a commitment to excellence, innovation, and operational efficiency. I believe that when technical expertise meets strategic leadership and a well-rounded life, truly transformative solutions are born. My mission is to empower businesses to navigate the digital landscape with confidence and agility, ensuring that technology serves as a catalyst for sustainable growth and success.</p>
-                  <div class="text-center"><a
-                    href="./other/fullstack.pdf"
-                    class="btn btn-outline-info mt-3"
-                    target="_blank"
-                  >
-                    Download Resume
-                  </a>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="display-5 fw-bold">About Me</h2>
+                    <p class="lead">
+                        I’m Rodd Azad, a Full-Stack Developer & Innovator with a strong background in software engineering, web development, and operations management. With over five years of experience, I specialize in creating scalable web solutions and integrating AI to enhance user experience.
+                    </p>
+                    <p class="lead">
+                        Passionate about building impactful solutions, I bring technical expertise, strategic leadership, and a results-driven mindset to every project.
+                    </p>
+                    <a href="about.html" class="btn btn-outline-info mt-3">Read More</a>
                 </div>
             </div>
-        </div>  
         </div>
-     </section>
-
-    <!-- Project Section -->
-     <section id="projects" class="py-5 bg-dark text-light">
-        <div class="container">
-            <h2 class="display-5 fw-bold text-center mb-4">Projects</h2>
-            <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <!-- Project 1 -->
-                     <div class="carousel-item">
-                        <div class="card bg-secondary text-light shadow-lg">
-                            <img src="./img/mediterranean-delight.png" alt="Mediterranean Restaurant" class="card-img-top">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Mediterranean Delight – A Taste of the Mediterranean Experience</h5>
-                                <p class="card-text">Mediterranean Delight is a visually stunning, responsive restaurant website built with HTML, CSS, Bootstrap, and JavaScript, offering an immersive online experience for a Mediterranean dining establishment. Featuring an elegant hero section, interactive carousel showcasing specialties, a structured menu page with appetizing imagery, and a reservation modal for seamless booking, this project blends aesthetics with functionality. With a rich, Mediterranean-inspired design, intuitive navigation, embedded Google Maps integration, and a dedicated "About Us" section highlighting the restaurant's story and philosophy, this website showcases my skills in front-end web development, responsive design, and user-friendly UI/UX experiences.</p>
-                                    <a href="https://github.com/roddazad/mediterranean-delight" class="btn btn-outline-info" target="blank"> View Code</a>
-                                    <a href="https://roddazad.github.io/mediterranean-delight/" class="btn btn-outline-light" target="_blank"> Live Demo</a>
+    </section>
+    
+       <!-- Projects Section --> 
+    <section id="projects" class="py-5 bg-dark text-light">
+      <div class="container">
+          <h2 class="display-5 fw-bold text-center mb-4">Projects</h2>
+          <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                  <!-- Project 1 -->
+                  <div class="carousel-item active">
+                      <div class="card bg-secondary text-light shadow-lg">
+                          <img src="./img/mediterranean-delight.png" alt="Mediterranean Restaurant" class="card-img-top">
+                          <div class="card-body text-center">
+                              <h5 class="card-title">Mediterranean Delight – A Taste of the Mediterranean Experience</h5>
+                              <p class="card-text">A visually stunning, responsive restaurant website...</p>
+                              <div class="collapse" id="mediterraneanDetails">
+                                  <p class="card-text">Built with HTML, CSS, Bootstrap, and JavaScript, this website offers an immersive online experience. It features an elegant hero section, interactive carousel showcasing specialties, a structured menu page with appetizing imagery, and a reservation modal for seamless booking.</p>
+                              </div>
+                              <div class="d-flex justify-content-center gap-2 mt-2">
+                              <button class="btn btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#mediterraneanDetails" aria-expanded="false">See Details</button>
+                              <a href="https://github.com/roddazad/mediterranean-delight" class="btn btn-outline-info mt-2" target="_blank">View Code</a>
+                              <a href="https://roddazad.github.io/mediterranean-delight/" class="btn btn-outline-light mt-2" target="_blank">Live Demo</a>
                             </div>
-                        </div>
-                     </div>
-                     <!-- Project 2 -->
-            <div class="carousel-item">
-                <div class="card bg-secondary text-light shadow-lg">
-                  <img
-                    src="./img/hero.png"
-                    class="card-img-top"
-                    alt="Piano Lesson Project"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Piano Wonderland - Bilingual Piano Lessons Website 🎹
-                    </h5>
-                    <p class="card-text">
-                      Piano Wonderland is a bilingual (English & Persian) piano lessons website for Mohammad Erfanian, built with HTML, CSS,and Bootstrap. It features seamless language switching, a dynamic service carousel, collapsible content sections, and an elegant dark-themed design. The site highlights beginner to advanced piano lessons, music theory, and performance coaching, with a contact section for easy accessibility. This project showcases my skills in responsive web development, multilingual site implementation, and UI/UX design.
-                    </p>
-                    <a
-                      href="https://github.com/roddazad/piano-teacher"
-                      class="btn btn-outline-info"
-                      target="_blank"
-                      >View Code</a
-                    >
-                    <a
-                      href="https://roddazad.github.io/piano-teacher/"
-                      class="btn btn-outline-light"
-                      target="_blank"
-                      >Live Demo</a
-                    >
+                          </div>
+                      </div>
                   </div>
-                </div>
-              </div>
-  
-              <!-- Project 3 -->
-              <div class="carousel-item">
-                <div class="card bg-secondary text-light shadow-lg">
-                  <img
-                    src="./img/travelGo.png"
-                    class="card-img-top"
-                    alt="ShopEase Project"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">TravelGo - Interactive Travel Booking Website</h5>
-                    <p class="card-text">
-                      TravelGo is a responsive travel booking website built with HTML, CSS, and Bootstrap, offering a seamless user experience for exploring destinations, booking travel packages, and making inquiries. It features a hero section, featured destinations, and curated packages, along with an About Us and Contact Page with Google Maps integration. Designed with modern UI elements, carousels, and dynamic cards, it ensures smooth functionality across all devices. This project showcases expertise in front-end development, UI/UX design, and responsive web design with a clean, maintainable codebase.
-                    </p>
-                    <a
-                      href="https://github.com/roddazad/travel-destination-website"
-                      class="btn btn-outline-info"
-                      target="_blank"
-                      >View Code</a
-                    >
-                    <a
-                      href="https://roddazad.github.io/travel-destination-website/"
-                      class="btn btn-outline-light"
-                      target="_blank"
-                      >Live Demo</a
-                    >
+                  <!-- Project 2 -->
+                  <div class="carousel-item">
+                      <div class="card bg-secondary text-light shadow-lg">
+                          <img src="./img/hero.png" class="card-img-top" alt="Piano Wonderland">
+                          <div class="card-body text-center">
+                              <h5 class="card-title">Piano Wonderland - Bilingual Piano Lessons Website 🎹</h5>
+                              <p class="card-text">A bilingual piano lessons website...</p>
+                              <div class="collapse" id="pianoDetails">
+                                  <p class="card-text">Built with HTML, CSS, and Bootstrap, this site offers seamless language switching, a dynamic service carousel, collapsible content sections, and an elegant dark-themed design.</p>
+                              </div>
+                              <div class="d-flex justify-content-center gap-2 mt-2">
+                              <button class="btn btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#pianoDetails" aria-expanded="false">See Details</button>
+                              <a href="https://github.com/roddazad/piano-teacher" class="btn btn-outline-info mt-2" target="_blank">View Code</a>
+                              <a href="https://roddazad.github.io/piano-teacher/" class="btn btn-outline-light mt-2" target="_blank">Live Demo</a>
+                            </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
-              </div>
-              <!-- Project 4 -->
-              <div class="carousel-item active">
-                <div class="card bg-secondary text-light shadow-lg">
-                  <img
-                    src="./img/financial-advisor.png"
-                    class="card-img-top"
-                    alt="Financial advisor landing page"
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title"> Financial Consulting Website</h5>
-                    <p class="card-text">
-                      Financial Consulting Website is a modern, responsive financial services platform designed to showcase personalized wealth management, retirement planning, debt consolidation, and home financing solutions. Built with HTML, CSS, Bootstrap, and JavaScript, the site features a professional hero section, dynamic service carousel, collapsible content sections, and a structured contact form for seamless user interaction. Its clean UI/UX, mobile-friendly navigation, and elegant dark-themed design ensure a polished and accessible experience, demonstrating my expertise in front-end web development, responsive design, and interactive UI elements.
-                    </p>
-                    <a
-                      href="https://github.com/roddazad/personal-banker"
-                      class="btn btn-outline-info"
-                      target="_blank"
-                      >View Code</a
-                    >
-                    <a
-                      href="https://roddazad.github.io/personal-banker/"
-                      class="btn btn-outline-light"
-                      target="_blank"
-                      >Live Demo</a
-                    >
+                  <!-- Project 3 -->
+                  <div class="carousel-item">
+                      <div class="card bg-secondary text-light shadow-lg">
+                          <img src="./img/travelGo.png" class="card-img-top" alt="Travel Booking Project" />
+                          <div class="card-body text-center">
+                              <h5 class="card-title">TravelGo - Interactive Travel Booking Website</h5>
+                              <p class="card-text">A responsive travel booking website...</p>
+                              <div class="collapse" id="travelDetails">
+                                  <p class="card-text">TravelGo is a responsive travel booking website built with HTML, CSS, and Bootstrap. It features a hero section, featured destinations, curated packages, and Google Maps integration.</p>
+                              </div>
+                              <div class="d-flex justify-content-center gap-2 mt-2">
+                              <button class="btn btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#travelDetails" aria-expanded="false">See Details</button>
+                              <a href="https://github.com/roddazad/travel-destination-website" class="btn btn-outline-info mt-2" target="_blank">View Code</a>
+                              <a href="https://roddazad.github.io/travel-destination-website/" class="btn btn-outline-light mt-2" target="_blank">Live Demo</a>
+                            </div>
+                          </div>
+                      </div>
                   </div>
-                </div>
+                  <!-- Project 4 -->
+                  <div class="carousel-item">
+                      <div class="card bg-secondary text-light shadow-lg">
+                          <img src="./img/financial-advisor.png" class="card-img-top" alt="Financial Consulting Website" />
+                          <div class="card-body text-center">
+                              <h5 class="card-title">Financial Consulting Website</h5>
+                              <p class="card-text">A modern, responsive financial services platform...</p>
+                              <div class="collapse" id="financeDetails">
+                                  <p class="card-text">Financial Consulting Website is a modern, responsive financial services platform designed to showcase personalized wealth management, retirement planning, and debt consolidation solutions.</p>
+                              </div>
+                              <div class="d-flex justify-content-center gap-2 mt-2">
+                              <button class="btn btn-outline-info mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#financeDetails" aria-expanded="false">See Details</button>
+                              <a href="https://github.com/roddazad/personal-banker" class="btn btn-outline-info mt-2" target="_blank">View Code</a>
+                              <a href="https://roddazad.github.io/personal-banker/" class="btn btn-outline-light mt-2" target="_blank">Live Demo</a>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-                </div>
-                <!-- Carousel Controls -->
-                 <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                 </button>
-                 <button
-                 class="carousel-control-next"
-                 type="button"
-                 data-bs-target="#projectsCarousel"
-                 data-bs-slide="next"
-               >
-                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                 <span class="visually-hidden">Next</span>
-               </button>
-            </div>
-        </div>
-     </section>
+               <!-- Carousel Controls -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#projectsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+   </button>
+   <button
+   class="carousel-control-next"
+   type="button"
+   data-bs-target="#projectsCarousel"
+   data-bs-slide="next"
+ >
+   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+   <span class="visually-hidden">Next</span>
+ </button>
+          </div>
+      </div>
+  </section>
+    
+
 
     <!-- Skills Section -->
      <section id="skills" class="py-5 bg-dark text-light">
@@ -317,39 +282,49 @@
             <h2 class="display-5 fw-bold md-4">Get in Touch</h2>
             <p class="lead mb-4">Let's connect! Reach out via email or find me on social media.</p>
             <!-- Email Link -->
-             <p><a href="mailto:roddazad@gmail.com" class="text-info fs-4">roddazad@gmail.com</a></p>
-            <!-- Social Media Links -->
-             <div class="mt-4">
-                <a href="https://www.linkedin.com/in/roddazad/" class="text-info mx-3" target="_blank">
-                    <i class="fa-brands fa-linkedin fa-2x"></i>
-                </a>
-                <a
-                href="https://github.com/roddazad"
-                class="text-info mx-3"
-                target="_blank"
-              >
-                <i class="fa-brands fa-github fa-2x"></i>
-              </a>
-              <a
-              href="https://twitter.com/yourhandle"
-              class="text-info mx-3"
-              target="_blank"
-            >
-              <i class="fa-brands fa-twitter fa-2x"></i>
-            </a>
-
-             </div> 
+            <div class="contact-info text-center">
+              <h3>Contact Me</h3>
+              <p>📧 Email: <a href="mailto:your@email.com" class="text-info">roddazad@gmail.com</a></p>
+              <p>📞 Phone: <a href="tel:+11234567890" class="text-info">(425) 591-7265</a></p>
+          </div>
+            
+            
         </div>
      </section>
 
     <!-- Footer Section -->
     <footer class="bg-dark text-light py-4">
-        <div class="container text-center">
-            <hr class="border-secondary my-3">
-            <p class="mb-0">&copy; <span id="current-year"></span> Rodd Azad. All rights reserved.
-            </p>
-        </div>
-    </footer>
+      <div class="container text-center">
+          <!-- Desktop View: Quick Links & Social Media -->
+          <div class="row footer-sections">
+              <div class="col-md-4">
+                  <h5 class="text-info">Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="index.html" class="footer-link">Home</a></li>
+                      <li><a href="about.html" class="footer-link">About Me</a></li>
+                      <li><a href="projects.html" class="footer-link">Projects</a></li>
+                      <li><a href="index.html#contact" class="footer-link">Contact</a></li>
+                  </ul>
+              </div>
+  
+              <div class="col-md-4">
+                  <h5 class="text-info">Connect with Me</h5>
+                  <div>
+                      <a href="https://www.linkedin.com/in/roddazad/" class="footer-social"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                      <a href="https://github.com/roddazad" class="footer-social"><i class="fa-brands fa-github fa-2x"></i></a>
+                      <a href="https://twitter.com/yourhandle" class="footer-social"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Always Visible: Copyright & Message -->
+          <div class="footer-message">
+              <h5 class="text-info">Stay Inspired</h5>
+              <p class="small">"Innovating one line of code at a time."</p>
+              <p class="mb-0">&copy; <span id="current-year"></span> Rodd Azad. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
     <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
