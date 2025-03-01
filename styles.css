@@ -1,172 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive Navbar */
+.navbar-nav {
+  text-align: center;
+}
+.navbar-toggler {
+  border: none;
+}
+
 /* Hero Section */
 .hero {
-    background: url(./img/hero.jpg)
-    no-repeat
-    center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;   
-    justify-content: center;
-    color: white;
-    position: relative;
+  background: url(./img/hero.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  text-align: center;
 }
 .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 .hero-content {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 .profile-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 3px solid #00ffff;
-    object-fit: cover;
-  }
-
-  /* Carousel Section */
-  .card-img-top {
-    height: 400px;
-    max-height: 400px;
-    object-fit: cover;
-  }
- .carousel-control-prev-icon,
- .carousel-control-next-icon {
-  background-color: rgba(6, 8, 8, 0.7);
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  padding: 10px;
-}
-#projectsCarousel{
-    border: none;
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
-    border-radius: 8px;
-}
-.collapse {
-  transition: height 0.3s ease-in-out;
+  border: 3px solid #00ffff;
+  object-fit: cover;
 }
 
-/* skill section */
+/* Carousel Section */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 500px; 
+}
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-title {
+  min-height: 50px;
+}
+.card-text {
+  flex-grow: 1;
+}
+.project-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+/* Timeline Section */
+.timeline {
+  background: #121212;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
+}
+.timeline-item {
+  padding: 20px;
+  margin-bottom: 30px; 
+  border-left: 3px solid #00ffff;
+  background: rgba(0, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+/* Skills Section */
 .skill-card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .skill-card:hover {
-    transform: scale(1.1); 
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7); /* Soft cyan glow */
-  }
-  .btn {
-    min-width: 120px; 
-    text-align: center;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
 }
 
-/* resume section */
+/* Resume Section */
 .resume-preview iframe {
-    border: none;
-    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
-    border-radius: 8px;
-  }
-  /* footer section */
-  footer {
-    background: #0a0a0a;
-    padding: 20px 0;
-    font-size: 14px;
-    text-align: center;
-    border-top: 3px solid #00ffff;
+  border: none;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
+  border-radius: 8px;
+  width: 100%;
+  height: 500px;
 }
-.footer-link {
-    color: #bbb;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
+
+/* Footer */
+footer {
+  background: #0a0a0a;
+  padding: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  border-top: 3px solid #00ffff;
 }
-.footer-link:hover {
-    color: #00ffff;
+.footer-link, .footer-social {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
-.footer-social {
-    margin: 0 10px;
-    color: #bbb;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.footer-social:hover {
-    color: #00ffff;
-    transform: scale(1.2);
+.footer-link:hover, .footer-social:hover {
+  color: #00ffff;
 }
 .social-icons {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 10px;
 }
 
-/* about.html */
-  /* timeline section */
-  .timeline {
-    background: #121212; /* Dark background */
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.3);
-}
-.timeline-item {
-    position: relative;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 3px solid #00ffff; /* Cyan accent */
-    background: rgba(0, 255, 255, 0.1); /* Subtle dark transparency */
-    border-radius: 8px;
-}
-.timeline h4 {
-    color: #ddd; 
-}
-.timeline p {
-    color: #ddd; 
-}
-.timeline-item:hover {
-  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.3);
-  transition: all 0.3s ease-in-out;
-}
-.timeline-title {
-  text-align: center;
-  color: #00ffff; /* Cyan accent */
-  font-size: 2rem;
-  margin-bottom: 20px;
-  
-}
-
-.fun-facts {
-  background: linear-gradient(to right, #121212, #1a1a1a);
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 255, 255, 0.4);
-}
-.fun-facts i {
-  margin-right: 10px;
-}
-.btn-outline-info:hover {
-  background: #00ffff;
-  color: #000;
-  transform: scale(1.05);
-  transition: all 0.3s ease-in-out;
-}
-
+/* Button Adjustments */
 #backToHome {
-  margin-bottom: 40px; 
+  margin-bottom: 60px; 
+  margin-top: 20px;
 }
 
-
-
-@media (max-width: 768px) { 
-  .footer-sections { 
-      display: none; 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .hero {
+      height: 80vh;
   }
-  .footer-message {
-      text-align: center;
-      padding: 10px 0;
+  .profile-img {
+      width: 150px;
+      height: 150px;
+  }
+  .card {
+      min-height: 450px;
+  }
+  .card-img-top {
+      height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      height: 70vh;
+  }
+  .hero h1 {
+      font-size: 1.8rem;
+  }
+  .profile-img {
+      width: 120px;
+      height: 120px;
+  }
+  .carousel-item img {
+      height: 250px;
+  }
+  .footer-sections {
+      display: none;
+  }
+  .card {
+      min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+      height: 60vh;
+  }
+  .hero h1 {
+      font-size: 1.5rem;
+  }
+  .profile-img {
+      width: 100px;
+      height: 100px;
+  }
+  .btn {
+      font-size: 14px;
+      padding: 8px 12px;
+  }
+  .project-buttons {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      min-height: 350px;
   }
 }
