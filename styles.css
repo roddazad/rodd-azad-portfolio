@@ -131,7 +131,9 @@ footer {
   margin-bottom: 60px; 
   margin-top: 20px;
 }
-
+.technology {
+  color:aquamarine
+}
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   .hero {
